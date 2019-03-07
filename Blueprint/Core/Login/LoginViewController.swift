@@ -21,6 +21,8 @@ class LoginViewController: UIViewController {
         
         usernameTextField.addTarget(self, action: #selector(textFieldDidChange), for: UIControl.Event.editingChanged)
         passwordTextField.addTarget(self, action: #selector(textFieldDidChange), for: UIControl.Event.editingChanged)
+        
+        loginButton.layer.cornerRadius = 5
     }
 
     @objc func textFieldDidChange() {

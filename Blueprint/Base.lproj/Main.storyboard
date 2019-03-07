@@ -64,9 +64,10 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbN-mA-6c0">
                                                 <rect key="frame" x="0.0" y="0.0" width="350" height="53.5"/>
+                                                <color key="backgroundColor" name="BrandPrimaryDark"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                                 <state key="normal" title="Login">
-                                                    <color key="titleColor" name="BrandPrimaryDark"/>
+                                                    <color key="titleColor" name="BrandOffWhite"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E2X-Ko-oV0"/>
@@ -117,77 +118,34 @@
                         <outlet property="loginButton" destination="KbN-mA-6c0" id="LyY-dH-V9k"/>
                         <outlet property="passwordTextField" destination="q5Y-on-x2E" id="GvB-SJ-c5P"/>
                         <outlet property="usernameTextField" destination="Zax-a5-9Xm" id="1T9-Lo-Pjy"/>
-                        <segue destination="Y7E-3y-l2l" kind="show" identifier="toLeaderboard" id="ZMH-XJ-1ZL"/>
+                        <segue destination="dE7-p4-Az6" kind="show" identifier="toLeaderboard" id="B5I-aC-J1w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="779.8828125" y="22.840409956076133"/>
         </scene>
-        <!--Map-->
-        <scene sceneID="dqW-XC-8AQ">
+        <!--View Controller-->
+        <scene sceneID="a0b-Dh-sJv">
             <objects>
-                <viewController id="5BN-we-Z9m" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="iDe-Tz-JQ3">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="46L-Lg-kBR">
-                                <rect key="frame" x="0.0" y="-20.5" width="1024" height="1366"/>
-                            </mapView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="46L-Lg-kBR" firstAttribute="width" secondItem="iDe-Tz-JQ3" secondAttribute="width" id="30d-rc-DFg"/>
-                            <constraint firstItem="46L-Lg-kBR" firstAttribute="centerY" secondItem="Qn3-xn-roL" secondAttribute="centerY" id="Cpx-39-mJL"/>
-                            <constraint firstItem="46L-Lg-kBR" firstAttribute="height" secondItem="iDe-Tz-JQ3" secondAttribute="height" id="Qjp-58-CJ3"/>
-                            <constraint firstItem="46L-Lg-kBR" firstAttribute="centerX" secondItem="Qn3-xn-roL" secondAttribute="centerX" id="sfg-Ci-R0V"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="Qn3-xn-roL"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Map" id="YtW-zr-5zn"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eYk-CF-2AD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2289.84375" y="408.93118594436305"/>
-        </scene>
-        <!--Leaderboard-->
-        <scene sceneID="Vhc-RI-UnY">
-            <objects>
-                <viewController id="pUe-UR-4ua" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="DIo-lv-cvE">
+                <viewController id="dE7-p4-Az6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a0b-cy-cCD">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="aKY-jm-edD"/>
+                        <viewLayoutGuide key="safeArea" id="760-nR-fP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Leaderboard" id="6Vc-Ed-ACt"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Lzl-9c-6Iq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GPm-eT-B0l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2290" y="-293"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="3oa-I3-NR9">
-            <objects>
-                <tabBarController id="Y7E-3y-l2l" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pQI-2J-EMZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="pUe-UR-4ua" kind="relationship" relationship="viewControllers" id="j9A-Lt-QAQ"/>
-                        <segue destination="5BN-we-Z9m" kind="relationship" relationship="viewControllers" id="bKh-re-xmI"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="M0L-Bc-TY5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1493" y="23"/>
+            <point key="canvasLocation" x="1443" y="23"/>
         </scene>
     </scenes>
     <resources>
         <image name="blueprint" width="709" height="473"/>
+        <namedColor name="BrandOffWhite">
+            <color red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="BrandPrimaryDark">
             <color red="0.035294117647058823" green="0.14901960784313725" blue="0.25882352941176473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
