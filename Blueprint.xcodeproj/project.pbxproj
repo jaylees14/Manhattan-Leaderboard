@@ -17,7 +17,16 @@
 		6936C0D7222562730062DED0 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6936C0D3222562730062DED0 /* KeychainManager.swift */; };
 		6936C0D8222562730062DED0 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6936C0D4222562730062DED0 /* Result.swift */; };
 		6936C0DA2225627B0062DED0 /* BlueprintAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6936C0D92225627B0062DED0 /* BlueprintAPI.swift */; };
+		6967D8382231510B00A28AFB /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967D8372231510B00A28AFB /* LeaderboardViewController.swift */; };
+		6967D83F2231544E00A28AFB /* Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967D83E2231544E00A28AFB /* Leaderboard.swift */; };
+		6967D841223154A100A28AFB /* CompletedBlueprint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967D840223154A100A28AFB /* CompletedBlueprint.swift */; };
+		6967D843223156D600A28AFB /* ItemSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967D842223156D600A28AFB /* ItemSchema.swift */; };
+		6967D845223159BD00A28AFB /* LeaderboardDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967D844223159BD00A28AFB /* LeaderboardDataManager.swift */; };
+		6967D8472231671200A28AFB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967D8462231671200A28AFB /* Item.swift */; };
+		6967D84A22316BD500A28AFB /* TopPlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967D84822316BD500A28AFB /* TopPlayerTableViewCell.swift */; };
+		6967D84B22316BD500A28AFB /* TopPlayerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6967D84922316BD500A28AFB /* TopPlayerTableViewCell.xib */; };
 		69A3538622256C0000064A7F /* Meckablecka.otf in Resources */ = {isa = PBXBuildFile; fileRef = 69A3538522256BF600064A7F /* Meckablecka.otf */; };
+		69EA878C2231803B00DC8B00 /* UIBezierPath+Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EA878B2231803B00DC8B00 /* UIBezierPath+Polygon.swift */; };
 		BBCE35197D5790A1ED9A2D5B /* Pods_Blueprint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338F8BA2B4AFBD88CC1E657A /* Pods_Blueprint.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +44,16 @@
 		6936C0D3222562730062DED0 /* KeychainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		6936C0D4222562730062DED0 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		6936C0D92225627B0062DED0 /* BlueprintAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueprintAPI.swift; sourceTree = "<group>"; };
+		6967D8372231510B00A28AFB /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
+		6967D83E2231544E00A28AFB /* Leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaderboard.swift; sourceTree = "<group>"; };
+		6967D840223154A100A28AFB /* CompletedBlueprint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedBlueprint.swift; sourceTree = "<group>"; };
+		6967D842223156D600A28AFB /* ItemSchema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSchema.swift; sourceTree = "<group>"; };
+		6967D844223159BD00A28AFB /* LeaderboardDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardDataManager.swift; sourceTree = "<group>"; };
+		6967D8462231671200A28AFB /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		6967D84822316BD500A28AFB /* TopPlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPlayerTableViewCell.swift; sourceTree = "<group>"; };
+		6967D84922316BD500A28AFB /* TopPlayerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopPlayerTableViewCell.xib; sourceTree = "<group>"; };
 		69A3538522256BF600064A7F /* Meckablecka.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Meckablecka.otf; sourceTree = "<group>"; };
+		69EA878B2231803B00DC8B00 /* UIBezierPath+Polygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+Polygon.swift"; sourceTree = "<group>"; };
 		C941CBA7DA4D4E52629EC203 /* Pods-Blueprint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blueprint.release.xcconfig"; path = "Pods/Target Support Files/Pods-Blueprint/Pods-Blueprint.release.xcconfig"; sourceTree = "<group>"; };
 		D029C401A71FF75D5F84DC52 /* Pods-Blueprint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blueprint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Blueprint/Pods-Blueprint.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +107,7 @@
 				6936C0CE22255EFA0062DED0 /* Services */,
 				6936C0CF22255EFE0062DED0 /* Utils */,
 				69A3538422256BD000064A7F /* Fonts */,
+				69EA878A2231802D00DC8B00 /* UI */,
 				6936C0C022255B720062DED0 /* Assets.xcassets */,
 				6936C0C222255B720062DED0 /* LaunchScreen.storyboard */,
 				6936C0C522255B720062DED0 /* Info.plist */,
@@ -100,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				6936C0D022255F190062DED0 /* Login */,
+				6967D836223150ED00A28AFB /* Leaderboard */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -108,6 +128,10 @@
 			isa = PBXGroup;
 			children = (
 				6904129022313DD300BCD592 /* AccountType.swift */,
+				6967D83E2231544E00A28AFB /* Leaderboard.swift */,
+				6967D840223154A100A28AFB /* CompletedBlueprint.swift */,
+				6967D842223156D600A28AFB /* ItemSchema.swift */,
+				6967D8462231671200A28AFB /* Item.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -138,12 +162,39 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		6967D836223150ED00A28AFB /* Leaderboard */ = {
+			isa = PBXGroup;
+			children = (
+				6967D8392231511400A28AFB /* Cells */,
+				6967D8372231510B00A28AFB /* LeaderboardViewController.swift */,
+				6967D844223159BD00A28AFB /* LeaderboardDataManager.swift */,
+			);
+			path = Leaderboard;
+			sourceTree = "<group>";
+		};
+		6967D8392231511400A28AFB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6967D84822316BD500A28AFB /* TopPlayerTableViewCell.swift */,
+				6967D84922316BD500A28AFB /* TopPlayerTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		69A3538422256BD000064A7F /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
 				69A3538522256BF600064A7F /* Meckablecka.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		69EA878A2231802D00DC8B00 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				69EA878B2231803B00DC8B00 /* UIBezierPath+Polygon.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		A3ADDE48CAC9B79732729E91 /* Frameworks */ = {
@@ -218,6 +269,7 @@
 				69A3538622256C0000064A7F /* Meckablecka.otf in Resources */,
 				6936C0C122255B720062DED0 /* Assets.xcassets in Resources */,
 				6936C0BF22255B6F0062DED0 /* Main.storyboard in Resources */,
+				6967D84B22316BD500A28AFB /* TopPlayerTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,12 +324,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				6936C0D8222562730062DED0 /* Result.swift in Sources */,
+				6967D841223154A100A28AFB /* CompletedBlueprint.swift in Sources */,
+				69EA878C2231803B00DC8B00 /* UIBezierPath+Polygon.swift in Sources */,
+				6967D843223156D600A28AFB /* ItemSchema.swift in Sources */,
+				6967D8472231671200A28AFB /* Item.swift in Sources */,
 				6904129122313DD300BCD592 /* AccountType.swift in Sources */,
 				6936C0BC22255B6F0062DED0 /* LoginViewController.swift in Sources */,
 				6936C0D6222562730062DED0 /* UIColor+branding.swift in Sources */,
 				6936C0BA22255B6F0062DED0 /* AppDelegate.swift in Sources */,
+				6967D845223159BD00A28AFB /* LeaderboardDataManager.swift in Sources */,
 				6936C0D7222562730062DED0 /* KeychainManager.swift in Sources */,
+				6967D84A22316BD500A28AFB /* TopPlayerTableViewCell.swift in Sources */,
+				6967D8382231510B00A28AFB /* LeaderboardViewController.swift in Sources */,
 				6936C0DA2225627B0062DED0 /* BlueprintAPI.swift in Sources */,
+				6967D83F2231544E00A28AFB /* Leaderboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
