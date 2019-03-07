@@ -22,8 +22,13 @@ public class BlueprintAPI {
         Alamofire.request("\(authenticateURL)/authenticate", method: HTTPMethod.post, parameters: params, encoding: JSONEncoding.default).responseSwiftyJSON { response in
             switch response.result {
             case .success(let data):
-                guard let refreshToken = data["refresh"].string, let accessToken = data["access"].string else {
+                guard let refreshToken = data["refresh"].string, let accessToken = data["access"].string, let accountType = data["account_type"].string else {
                     callback(.failure(data["error"].string ?? "An unknown error occurred"))
+                    return
+                }
+                
+                guard AccountType(rawValue: accountType) == AccountType.developer else {
+                    callback(.failure("This tool is restricted to internal use only"))
                     return
                 }
                 
