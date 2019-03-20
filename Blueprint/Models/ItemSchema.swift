@@ -9,7 +9,5 @@
 import Foundation
 
 public struct ItemSchema: Decodable {
-    
-    
     let items: [Item]
 }

@@ -9,16 +9,14 @@
 import Foundation
 
 public protocol LeaderboardDelegate {
-    func didUpdateProgress(_ progress: [String: Float])
+    func didUpdateProgress(_ progress: [String: Int])
     func didReceiveError(_ error: String)
 }
 
 class LeaderboardDataManager {
-    
-    
-    var delegate: LeaderboardDelegate?
-    
-    var numberOfBlueprints = 1
+    public var delegate: LeaderboardDelegate?
+    private var numberOfBlueprints = 1
+    public typealias Progress = (username: String, completed: Int)
     
     public init() {
         BlueprintAPI.itemSchema { (result) in
@@ -28,9 +26,9 @@ class LeaderboardDataManager {
                 self.numberOfBlueprints = schema.items
                     .filter {
                         $0.type == Item.ItemType.blueprintPlaceable ||
-                        $0.type == Item.ItemType.blueprintUnplaceable ||
-                        $0.type == Item.ItemType.blueprintGoal
+                        $0.type == Item.ItemType.blueprintUnplaceable
                     }.count
+                print(self.numberOfBlueprints)
                 
                 self.fetchProgress()
             case .failure(let error):
@@ -40,8 +38,6 @@ class LeaderboardDataManager {
     }
     
     private func fetchProgress() {
-        var progression = [String: Float]()
-        
         // Mock the data
         let leaderboard = Leaderboard(leaderboard: [
             CompletedBlueprint(username: "Jay", blueprint: 1),
@@ -50,7 +46,9 @@ class LeaderboardDataManager {
             CompletedBlueprint(username: "Jay", blueprint: 4),
             CompletedBlueprint(username: "Jay", blueprint: 2),
             CompletedBlueprint(username: "Jay", blueprint: 3),
-            CompletedBlueprint(username: "Jay", blueprint: 4),
+            CompletedBlueprint(username: "Jay", blueprint: 4)]
+            )
+        let leaderboard2 = Leaderboard(leaderboard: [
             CompletedBlueprint(username: "Will", blueprint: 7),
             CompletedBlueprint(username: "Will", blueprint: 7),
             CompletedBlueprint(username: "Will", blueprint: 7),
@@ -71,14 +69,52 @@ class LeaderboardDataManager {
             CompletedBlueprint(username: "Eli", blueprint: 7),
             CompletedBlueprint(username: "Adam", blueprint: 7),
             CompletedBlueprint(username: "Adam", blueprint: 7),
-            CompletedBlueprint(username: "TheLegend27", blueprint: 7)
+            CompletedBlueprint(username: "TheLegend27", blueprint: 7),
+            CompletedBlueprint(username: "Jay2", blueprint: 1),
+            CompletedBlueprint(username: "Jay2", blueprint: 2),
+            CompletedBlueprint(username: "Jay2", blueprint: 3),
+            CompletedBlueprint(username: "Jay2", blueprint: 4),
+            CompletedBlueprint(username: "Jay2", blueprint: 2),
+            CompletedBlueprint(username: "Jay2", blueprint: 3),
+            CompletedBlueprint(username: "Jay2", blueprint: 4),
+            CompletedBlueprint(username: "Will2", blueprint: 7),
+            CompletedBlueprint(username: "Will2", blueprint: 7),
+            CompletedBlueprint(username: "Will2", blueprint: 7),
+            CompletedBlueprint(username: "Will2", blueprint: 7),
+            CompletedBlueprint(username: "Will2", blueprint: 7),
+            CompletedBlueprint(username: "Will2", blueprint: 7),
+            CompletedBlueprint(username: "Andrei2", blueprint: 7),
+            CompletedBlueprint(username: "Andrei2", blueprint: 7),
+            CompletedBlueprint(username: "Andrei2", blueprint: 7),
+            CompletedBlueprint(username: "Andrei2", blueprint: 7),
+            CompletedBlueprint(username: "Andrei2", blueprint: 7),
+            CompletedBlueprint(username: "Ben2", blueprint: 7),
+            CompletedBlueprint(username: "Ben2", blueprint: 7),
+            CompletedBlueprint(username: "Ben2", blueprint: 7),
+            CompletedBlueprint(username: "Ben2", blueprint: 7),
+            CompletedBlueprint(username: "Eli2", blueprint: 7),
+            CompletedBlueprint(username: "Eli2", blueprint: 7),
+            CompletedBlueprint(username: "Eli2", blueprint: 7),
+            CompletedBlueprint(username: "Adam2", blueprint: 7),
+            CompletedBlueprint(username: "Adam2", blueprint: 7),
+            CompletedBlueprint(username: "TheLegend272", blueprint: 7)
         ])
         
-        // Build up a dictionary of username -> progression
-        leaderboard.leaderboard.forEach { (completed) in
-            let current = progression[completed.username] ?? 0
-            progression[completed.username] = current + (1.0 / Float(numberOfBlueprints))
+        // Build up a dictionary of username -> number completed
+        let progression: [String: Int] = leaderboard.leaderboard.reduce(into: [:]) { dict, blueprint in
+            let current = dict[blueprint.username] ?? 0
+            dict[blueprint.username] = current + 1
         }
+        
+        let progression2: [String: Int] = leaderboard2.leaderboard.reduce(into: [:]) { dict, blueprint in
+            let current = dict[blueprint.username] ?? 0
+            dict[blueprint.username] = current + 1
+        }
+      
         delegate?.didUpdateProgress(progression)
+        
+        Timer.scheduledTimer(withTimeInterval: 10, repeats: false) { (timer) in
+            self.delegate?.didUpdateProgress(progression2)
+        }
     }
 }

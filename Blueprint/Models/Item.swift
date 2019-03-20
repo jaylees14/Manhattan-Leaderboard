@@ -19,9 +19,9 @@ public struct Item: Decodable {
     public enum ItemType: Int, Decodable {
         case primaryResource = 1
         case blueprintPlaceable = 2
-        case blueprintUnplaceable = 3
-        case machineryUnplaceable = 4
-        case blueprintGoal = 5
+        case machineryUnplaceable = 3
+        case blueprintUnplaceable = 4
+        case intangible = 5
     }
 
     
