@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct Leaderboard {
+public struct Leaderboard: Decodable {
     let leaderboard: [CompletedBlueprint]
 }

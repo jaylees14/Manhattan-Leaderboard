@@ -35,7 +35,6 @@ class LoginViewController: UIViewController {
     }
     
     // MARK: - Actions
-
     @IBAction func passwordEnterTapped(_ sender: UIButton) {
         loginTapped(sender)
     }

@@ -8,7 +8,12 @@
 
 import Foundation
 
-struct CompletedBlueprint {
+public struct CompletedBlueprint: Decodable {
+    enum CodingKeys: String, CodingKey {
+        case username = "username"
+        case blueprint = "item_id"
+    }
+    
     let username: String
     let blueprint: Int
 }

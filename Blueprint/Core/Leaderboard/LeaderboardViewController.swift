@@ -39,9 +39,6 @@ class LeaderboardViewController: UIViewController {
     }
     
     private func reloadTopThree() {
-       print(progress)
-        
-        
         if let first = progress.first {
             firstPlaceUsername.text = first.username
             set(stackView: firstPlaceTopStackView, to: progressTop(first.completed))
@@ -74,6 +71,7 @@ class LeaderboardViewController: UIViewController {
     }
     
     private func set(stackView: UIStackView, to progress: Int) {
+        stackView.isHidden = progress == 0
         let imageViews = stackView.subviews.filter { $0 is UIImageView } as! [UIImageView]
         imageViews.forEach { $0.image = outlineImage }
         imageViews.prefix(upTo: progress).forEach { $0.image = filledImage }
@@ -97,7 +95,6 @@ extension LeaderboardViewController: UICollectionViewDelegate, UICollectionViewD
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! LeaderboardCollectionViewCell
         // +4 since we store stop 3 separately, and row is 0 indexed
         cell.configure(position: indexPath.row + 4, progress: progress[indexPath.row + 3])
-        
         return cell
     }
     

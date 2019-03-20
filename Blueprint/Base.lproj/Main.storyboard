@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dE7-p4-Az6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad12_9rounded" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -133,296 +133,293 @@
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hex" translatesAutoresizingMaskIntoConstraints="NO" id="KaD-Fv-YIG">
-                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hex" translatesAutoresizingMaskIntoConstraints="NO" id="KaD-Fv-YIG">
+                                <rect key="frame" x="0.0" y="-76" width="1366" height="1180"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" name="BrandPrimary"/>
                             </imageView>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ojG-kU-oCh">
+                            <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wd2-cq-T2U">
                                 <rect key="frame" x="0.0" y="2" width="1366" height="1024"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Nlp-dk-p4S">
-                                    <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LoF-Ah-wft">
-                                            <rect key="frame" x="553" y="88" width="260" height="262"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="largeHexOutline" translatesAutoresizingMaskIntoConstraints="NO" id="Qv6-N8-QlL">
-                                                    <rect key="frame" x="0.0" y="0.0" width="260" height="262"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fe6-8y-hkA">
-                                                    <rect key="frame" x="126" y="30" width="8" height="42"/>
-                                                    <fontDescription key="fontDescription" name="Meckablecka" family="Meckablecka" pointSize="40"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="1" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="5rg-cS-hZ0">
-                                                    <rect key="frame" x="40" y="142.5" width="164" height="23"/>
-                                                    <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="FFA-bB-gAP">
-                                                            <rect key="frame" x="0.0" y="0.0" width="22.5" height="23"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="2bv-WC-xnt">
-                                                            <rect key="frame" x="28.5" y="0.0" width="22" height="23"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="KeW-79-7FC">
-                                                            <rect key="frame" x="56.5" y="0.0" width="22.5" height="23"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="jmj-hY-5cY">
-                                                            <rect key="frame" x="85" y="0.0" width="22.5" height="23"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="sqr-g2-f4p">
-                                                            <rect key="frame" x="113.5" y="0.0" width="22" height="23"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="eri-NU-se6">
-                                                            <rect key="frame" x="141.5" y="0.0" width="22.5" height="23"/>
-                                                        </imageView>
-                                                    </subviews>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="23" id="h1x-ga-iPw"/>
-                                                    </constraints>
-                                                </stackView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="1" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Nzb-b1-kQh">
-                                                    <rect key="frame" x="54" y="165.5" width="164" height="23"/>
-                                                    <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="hJR-4k-FXB">
-                                                            <rect key="frame" x="0.0" y="0.0" width="22.5" height="23"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="Nmt-tF-Qyb">
-                                                            <rect key="frame" x="28.5" y="0.0" width="22" height="23"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="YR0-N7-9DT">
-                                                            <rect key="frame" x="56.5" y="0.0" width="22.5" height="23"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="w9Z-hY-Ujr">
-                                                            <rect key="frame" x="85" y="0.0" width="22.5" height="23"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="sDE-dK-dbp">
-                                                            <rect key="frame" x="113.5" y="0.0" width="22" height="23"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="Ar1-N6-fZa">
-                                                            <rect key="frame" x="141.5" y="0.0" width="22.5" height="23"/>
-                                                        </imageView>
-                                                    </subviews>
-                                                </stackView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w3n-px-Pr4">
-                                                    <rect key="frame" x="28" y="76" width="204" height="58.5"/>
-                                                    <fontDescription key="fontDescription" name="Meckablecka" family="Meckablecka" pointSize="56"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <constraints>
-                                                <constraint firstItem="w3n-px-Pr4" firstAttribute="centerX" secondItem="LoF-Ah-wft" secondAttribute="centerX" id="2t8-hj-iQ9"/>
-                                                <constraint firstItem="Nzb-b1-kQh" firstAttribute="width" secondItem="5rg-cS-hZ0" secondAttribute="width" id="3FD-G8-Zrb"/>
-                                                <constraint firstItem="Qv6-N8-QlL" firstAttribute="height" secondItem="LoF-Ah-wft" secondAttribute="height" id="6sE-le-bBf"/>
-                                                <constraint firstItem="5rg-cS-hZ0" firstAttribute="top" secondItem="w3n-px-Pr4" secondAttribute="bottom" constant="8" id="DvA-Q7-GlB"/>
-                                                <constraint firstItem="Nzb-b1-kQh" firstAttribute="top" secondItem="5rg-cS-hZ0" secondAttribute="bottom" id="HnS-5s-nh0"/>
-                                                <constraint firstItem="w3n-px-Pr4" firstAttribute="top" secondItem="fe6-8y-hkA" secondAttribute="bottom" constant="4" id="Qwi-Bc-5JI"/>
-                                                <constraint firstAttribute="trailing" secondItem="5rg-cS-hZ0" secondAttribute="trailing" constant="56" id="Tga-0N-hZi"/>
-                                                <constraint firstItem="Qv6-N8-QlL" firstAttribute="centerY" secondItem="LoF-Ah-wft" secondAttribute="centerY" id="WC9-qh-jU5"/>
-                                                <constraint firstItem="fe6-8y-hkA" firstAttribute="centerX" secondItem="LoF-Ah-wft" secondAttribute="centerX" id="Yct-OV-bxi"/>
-                                                <constraint firstItem="Nzb-b1-kQh" firstAttribute="height" secondItem="5rg-cS-hZ0" secondAttribute="height" id="egg-Gf-ShK"/>
-                                                <constraint firstItem="Qv6-N8-QlL" firstAttribute="width" secondItem="LoF-Ah-wft" secondAttribute="width" id="gIV-7k-mYC"/>
-                                                <constraint firstItem="Nzb-b1-kQh" firstAttribute="leading" secondItem="5rg-cS-hZ0" secondAttribute="leading" constant="14" id="gPY-6j-15o"/>
-                                                <constraint firstItem="5rg-cS-hZ0" firstAttribute="leading" secondItem="LoF-Ah-wft" secondAttribute="leading" constant="40" id="iu8-Dr-VSl"/>
-                                                <constraint firstItem="Qv6-N8-QlL" firstAttribute="centerX" secondItem="LoF-Ah-wft" secondAttribute="centerX" id="qDZ-Ey-79F"/>
-                                                <constraint firstItem="fe6-8y-hkA" firstAttribute="top" secondItem="LoF-Ah-wft" secondAttribute="top" constant="30" id="wss-t9-L1r"/>
-                                                <constraint firstAttribute="width" constant="260" id="xps-cz-e6j"/>
-                                                <constraint firstItem="w3n-px-Pr4" firstAttribute="leading" secondItem="LoF-Ah-wft" secondAttribute="leading" constant="28" id="yyl-Sb-UpH"/>
-                                            </constraints>
-                                        </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7sc-FW-5NX">
-                                            <rect key="frame" x="233" y="67" width="240" height="240"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="largeHex" translatesAutoresizingMaskIntoConstraints="NO" id="AaD-7Z-emG">
-                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRD-ib-Lm0">
-                                                    <rect key="frame" x="109.5" y="30" width="21.5" height="42"/>
-                                                    <fontDescription key="fontDescription" name="Meckablecka" family="Meckablecka" pointSize="40"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="1" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="fDC-Lh-fbZ">
-                                                    <rect key="frame" x="32" y="142.5" width="158" height="23"/>
-                                                    <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="WT2-g5-M5m">
-                                                            <rect key="frame" x="0.0" y="0.0" width="21.5" height="23"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="QfU-5s-iDX">
-                                                            <rect key="frame" x="27.5" y="0.0" width="21" height="23"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="OUI-vW-B4A">
-                                                            <rect key="frame" x="54.5" y="0.0" width="21.5" height="23"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="qg3-fr-qhE">
-                                                            <rect key="frame" x="82" y="0.0" width="21.5" height="23"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="qwA-tH-YeZ">
-                                                            <rect key="frame" x="109.5" y="0.0" width="21" height="23"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="ZQc-e3-DRb">
-                                                            <rect key="frame" x="136.5" y="0.0" width="21.5" height="23"/>
-                                                        </imageView>
-                                                    </subviews>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="23" id="b1c-ua-ua1"/>
-                                                    </constraints>
-                                                </stackView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="1" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="RRI-Ju-Kdq">
-                                                    <rect key="frame" x="46" y="165.5" width="158" height="23"/>
-                                                    <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="S42-7U-t6g">
-                                                            <rect key="frame" x="0.0" y="0.0" width="21.5" height="23"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="4yM-XR-TPO">
-                                                            <rect key="frame" x="27.5" y="0.0" width="21" height="23"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="pcI-LL-468">
-                                                            <rect key="frame" x="54.5" y="0.0" width="21.5" height="23"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="SGi-at-lvF">
-                                                            <rect key="frame" x="82" y="0.0" width="21.5" height="23"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="Zdf-ie-bhJ">
-                                                            <rect key="frame" x="109.5" y="0.0" width="21" height="23"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="jFj-gv-7UH">
-                                                            <rect key="frame" x="136.5" y="0.0" width="21.5" height="23"/>
-                                                        </imageView>
-                                                    </subviews>
-                                                </stackView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dpa-Ap-iew">
-                                                    <rect key="frame" x="28" y="76" width="184" height="58.5"/>
-                                                    <fontDescription key="fontDescription" name="Meckablecka" family="Meckablecka" pointSize="56"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <constraints>
-                                                <constraint firstItem="dpa-Ap-iew" firstAttribute="centerX" secondItem="7sc-FW-5NX" secondAttribute="centerX" id="0Ho-GP-njC"/>
-                                                <constraint firstItem="AaD-7Z-emG" firstAttribute="centerX" secondItem="7sc-FW-5NX" secondAttribute="centerX" id="6ok-kD-s8E"/>
-                                                <constraint firstItem="AaD-7Z-emG" firstAttribute="width" secondItem="7sc-FW-5NX" secondAttribute="width" id="9jq-YS-khO"/>
-                                                <constraint firstItem="fDC-Lh-fbZ" firstAttribute="top" secondItem="dpa-Ap-iew" secondAttribute="bottom" constant="8" id="CUD-R7-T5L"/>
-                                                <constraint firstAttribute="width" constant="240" id="DX3-8x-KFv"/>
-                                                <constraint firstItem="AaD-7Z-emG" firstAttribute="centerY" secondItem="7sc-FW-5NX" secondAttribute="centerY" id="E0u-0V-ZGS"/>
-                                                <constraint firstAttribute="width" secondItem="7sc-FW-5NX" secondAttribute="height" multiplier="1:1" id="GjJ-5U-HpR"/>
-                                                <constraint firstItem="RRI-Ju-Kdq" firstAttribute="top" secondItem="fDC-Lh-fbZ" secondAttribute="bottom" id="Jsx-mV-tvO"/>
-                                                <constraint firstItem="kRD-ib-Lm0" firstAttribute="centerX" secondItem="7sc-FW-5NX" secondAttribute="centerX" id="K4n-zX-5ze"/>
-                                                <constraint firstItem="dpa-Ap-iew" firstAttribute="leading" secondItem="7sc-FW-5NX" secondAttribute="leading" constant="28" id="TKa-TO-T2i"/>
-                                                <constraint firstItem="RRI-Ju-Kdq" firstAttribute="width" secondItem="fDC-Lh-fbZ" secondAttribute="width" id="VAd-62-fPS"/>
-                                                <constraint firstAttribute="trailing" secondItem="fDC-Lh-fbZ" secondAttribute="trailing" constant="50" id="chI-l1-geI"/>
-                                                <constraint firstItem="RRI-Ju-Kdq" firstAttribute="height" secondItem="fDC-Lh-fbZ" secondAttribute="height" id="dsT-hl-ay4"/>
-                                                <constraint firstItem="AaD-7Z-emG" firstAttribute="height" secondItem="7sc-FW-5NX" secondAttribute="height" id="hcU-BM-C8F"/>
-                                                <constraint firstItem="kRD-ib-Lm0" firstAttribute="top" secondItem="7sc-FW-5NX" secondAttribute="top" constant="30" id="lVr-DV-jzu"/>
-                                                <constraint firstItem="dpa-Ap-iew" firstAttribute="top" secondItem="kRD-ib-Lm0" secondAttribute="bottom" constant="4" id="mzD-Gb-3q4"/>
-                                                <constraint firstItem="RRI-Ju-Kdq" firstAttribute="leading" secondItem="fDC-Lh-fbZ" secondAttribute="leading" constant="14" id="w9d-jz-gUZ"/>
-                                                <constraint firstItem="fDC-Lh-fbZ" firstAttribute="leading" secondItem="7sc-FW-5NX" secondAttribute="leading" constant="32" id="yJk-37-8O5"/>
-                                            </constraints>
-                                        </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ukp-Yt-RkM">
-                                            <rect key="frame" x="893" y="67" width="240" height="240"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="largeHex" translatesAutoresizingMaskIntoConstraints="NO" id="mhq-Qo-77b">
-                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0z-9T-hgP">
-                                                    <rect key="frame" x="110" y="30" width="20" height="42"/>
-                                                    <fontDescription key="fontDescription" name="Meckablecka" family="Meckablecka" pointSize="40"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="1" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="j2F-m1-E9U">
-                                                    <rect key="frame" x="32" y="142.5" width="158" height="23"/>
-                                                    <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="IY3-ea-Yt9">
-                                                            <rect key="frame" x="0.0" y="0.0" width="21.5" height="23"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="5Fm-2O-ofD">
-                                                            <rect key="frame" x="27.5" y="0.0" width="21" height="23"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="399-Zf-hos">
-                                                            <rect key="frame" x="54.5" y="0.0" width="21.5" height="23"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="sQ2-4q-7iP">
-                                                            <rect key="frame" x="82" y="0.0" width="21.5" height="23"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="MAe-KQ-DhV">
-                                                            <rect key="frame" x="109.5" y="0.0" width="21" height="23"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="lHB-0P-Ggl">
-                                                            <rect key="frame" x="136.5" y="0.0" width="21.5" height="23"/>
-                                                        </imageView>
-                                                    </subviews>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="23" id="1sb-eA-Pva"/>
-                                                    </constraints>
-                                                </stackView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="1" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="8Xh-UK-cpB">
-                                                    <rect key="frame" x="46" y="165.5" width="158" height="23"/>
-                                                    <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="qIP-hj-FPH">
-                                                            <rect key="frame" x="0.0" y="0.0" width="21.5" height="23"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="wPc-1a-oiS">
-                                                            <rect key="frame" x="27.5" y="0.0" width="21" height="23"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="khg-nX-JB6">
-                                                            <rect key="frame" x="54.5" y="0.0" width="21.5" height="23"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="osc-yF-OOs">
-                                                            <rect key="frame" x="82" y="0.0" width="21.5" height="23"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="pgE-BH-TGc">
-                                                            <rect key="frame" x="109.5" y="0.0" width="21" height="23"/>
-                                                        </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="DBg-pm-5OI">
-                                                            <rect key="frame" x="136.5" y="0.0" width="21.5" height="23"/>
-                                                        </imageView>
-                                                    </subviews>
-                                                </stackView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8ak-Xz-BDj">
-                                                    <rect key="frame" x="28" y="76" width="184" height="58.5"/>
-                                                    <fontDescription key="fontDescription" name="Meckablecka" family="Meckablecka" pointSize="56"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <constraints>
-                                                <constraint firstItem="8Xh-UK-cpB" firstAttribute="height" secondItem="j2F-m1-E9U" secondAttribute="height" id="04P-fK-JYM"/>
-                                                <constraint firstItem="8Xh-UK-cpB" firstAttribute="width" secondItem="j2F-m1-E9U" secondAttribute="width" id="1mF-T3-Zkz"/>
-                                                <constraint firstAttribute="trailing" secondItem="j2F-m1-E9U" secondAttribute="trailing" constant="50" id="38x-yN-6aV"/>
-                                                <constraint firstItem="8ak-Xz-BDj" firstAttribute="centerX" secondItem="ukp-Yt-RkM" secondAttribute="centerX" id="5hd-ZN-NgA"/>
-                                                <constraint firstItem="j2F-m1-E9U" firstAttribute="leading" secondItem="ukp-Yt-RkM" secondAttribute="leading" constant="32" id="7wk-lK-o3C"/>
-                                                <constraint firstItem="mhq-Qo-77b" firstAttribute="centerX" secondItem="ukp-Yt-RkM" secondAttribute="centerX" id="8Yf-d7-jot"/>
-                                                <constraint firstItem="8ak-Xz-BDj" firstAttribute="top" secondItem="u0z-9T-hgP" secondAttribute="bottom" constant="4" id="8bZ-GZ-VoB"/>
-                                                <constraint firstItem="8ak-Xz-BDj" firstAttribute="leading" secondItem="ukp-Yt-RkM" secondAttribute="leading" constant="28" id="8ct-uy-dlc"/>
-                                                <constraint firstItem="8Xh-UK-cpB" firstAttribute="leading" secondItem="j2F-m1-E9U" secondAttribute="leading" constant="14" id="Iw6-Wz-LfT"/>
-                                                <constraint firstItem="u0z-9T-hgP" firstAttribute="centerX" secondItem="ukp-Yt-RkM" secondAttribute="centerX" id="Uh3-e7-Ve9"/>
-                                                <constraint firstAttribute="width" secondItem="ukp-Yt-RkM" secondAttribute="height" multiplier="1:1" id="dur-HA-iwq"/>
-                                                <constraint firstItem="mhq-Qo-77b" firstAttribute="centerY" secondItem="ukp-Yt-RkM" secondAttribute="centerY" id="fLz-D6-tDH"/>
-                                                <constraint firstItem="j2F-m1-E9U" firstAttribute="top" secondItem="8ak-Xz-BDj" secondAttribute="bottom" constant="8" id="jkH-iv-Dgm"/>
-                                                <constraint firstItem="8Xh-UK-cpB" firstAttribute="top" secondItem="j2F-m1-E9U" secondAttribute="bottom" id="kfE-pB-p0R"/>
-                                                <constraint firstItem="mhq-Qo-77b" firstAttribute="width" secondItem="ukp-Yt-RkM" secondAttribute="width" id="knk-QE-7DP"/>
-                                                <constraint firstItem="u0z-9T-hgP" firstAttribute="top" secondItem="ukp-Yt-RkM" secondAttribute="top" constant="30" id="mU7-Jq-nyb"/>
-                                                <constraint firstAttribute="width" constant="240" id="wW7-I5-qRq"/>
-                                                <constraint firstItem="mhq-Qo-77b" firstAttribute="height" secondItem="ukp-Yt-RkM" secondAttribute="height" id="zvz-yv-cDs"/>
-                                            </constraints>
-                                        </view>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="Qv6-N8-QlL" firstAttribute="leading" secondItem="7sc-FW-5NX" secondAttribute="trailing" constant="80" id="9gn-Xe-d9H"/>
-                                        <constraint firstItem="7sc-FW-5NX" firstAttribute="top" secondItem="Nlp-dk-p4S" secondAttribute="top" constant="67" id="ROY-M2-lRP"/>
-                                        <constraint firstItem="LoF-Ah-wft" firstAttribute="centerX" secondItem="Nlp-dk-p4S" secondAttribute="centerX" id="X36-oY-7lt"/>
-                                        <constraint firstItem="LoF-Ah-wft" firstAttribute="top" secondItem="Nlp-dk-p4S" secondAttribute="top" constant="88" id="XyY-Hh-Aja"/>
-                                        <constraint firstItem="ukp-Yt-RkM" firstAttribute="top" secondItem="Nlp-dk-p4S" secondAttribute="top" constant="67" id="ibV-8Z-3hd"/>
-                                        <constraint firstItem="ukp-Yt-RkM" firstAttribute="leading" secondItem="Qv6-N8-QlL" secondAttribute="trailing" constant="80" id="tKS-kh-2MY"/>
-                                    </constraints>
-                                </view>
-                                <blurEffect style="dark"/>
-                            </visualEffectView>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YTI-aI-H2r">
+                                        <rect key="frame" x="553" y="88" width="260" height="262"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="largeHexOutline" translatesAutoresizingMaskIntoConstraints="NO" id="dI6-np-zwk">
+                                                <rect key="frame" x="0.0" y="0.0" width="260" height="262"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6t-gg-nBB">
+                                                <rect key="frame" x="126" y="30" width="8" height="42"/>
+                                                <fontDescription key="fontDescription" name="Meckablecka" family="Meckablecka" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="1" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="M1E-hq-tGJ">
+                                                <rect key="frame" x="40" y="142.5" width="164" height="23"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="MIo-um-nYO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="22.5" height="23"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="Blc-yS-THu">
+                                                        <rect key="frame" x="28.5" y="0.0" width="22" height="23"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="cdH-75-fYv">
+                                                        <rect key="frame" x="56.5" y="0.0" width="22.5" height="23"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="hRt-HL-o1E">
+                                                        <rect key="frame" x="85" y="0.0" width="22.5" height="23"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="e6K-1V-wov">
+                                                        <rect key="frame" x="113.5" y="0.0" width="22" height="23"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="vZK-Qq-zNw">
+                                                        <rect key="frame" x="141.5" y="0.0" width="22.5" height="23"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="23" id="w9e-6G-tgW"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="1" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="jpS-G0-AXw">
+                                                <rect key="frame" x="54" y="165.5" width="164" height="23"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="LuC-YQ-2RT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="22.5" height="23"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="cww-Hl-TcQ">
+                                                        <rect key="frame" x="28.5" y="0.0" width="22" height="23"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="dFR-ck-Gmo">
+                                                        <rect key="frame" x="56.5" y="0.0" width="22.5" height="23"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="cKb-1f-CQa">
+                                                        <rect key="frame" x="85" y="0.0" width="22.5" height="23"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="phY-ty-sNO">
+                                                        <rect key="frame" x="113.5" y="0.0" width="22" height="23"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="69w-Mg-Kzp">
+                                                        <rect key="frame" x="141.5" y="0.0" width="22.5" height="23"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mL3-cU-2ky">
+                                                <rect key="frame" x="28" y="76" width="204" height="58.5"/>
+                                                <fontDescription key="fontDescription" name="Meckablecka" family="Meckablecka" pointSize="56"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="mL3-cU-2ky" firstAttribute="top" secondItem="O6t-gg-nBB" secondAttribute="bottom" constant="4" id="0P3-5Q-myQ"/>
+                                            <constraint firstItem="dI6-np-zwk" firstAttribute="height" secondItem="YTI-aI-H2r" secondAttribute="height" id="8Fa-6X-Bjh"/>
+                                            <constraint firstItem="O6t-gg-nBB" firstAttribute="top" secondItem="YTI-aI-H2r" secondAttribute="top" constant="30" id="TfR-ok-EJd"/>
+                                            <constraint firstItem="jpS-G0-AXw" firstAttribute="top" secondItem="M1E-hq-tGJ" secondAttribute="bottom" id="Ue0-M7-8oj"/>
+                                            <constraint firstItem="jpS-G0-AXw" firstAttribute="width" secondItem="M1E-hq-tGJ" secondAttribute="width" id="VVI-24-b7b"/>
+                                            <constraint firstItem="O6t-gg-nBB" firstAttribute="centerX" secondItem="YTI-aI-H2r" secondAttribute="centerX" id="WcI-UX-dZW"/>
+                                            <constraint firstItem="M1E-hq-tGJ" firstAttribute="top" secondItem="mL3-cU-2ky" secondAttribute="bottom" constant="8" id="Wq7-xa-y3S"/>
+                                            <constraint firstItem="dI6-np-zwk" firstAttribute="width" secondItem="YTI-aI-H2r" secondAttribute="width" id="frg-7g-n2B"/>
+                                            <constraint firstItem="jpS-G0-AXw" firstAttribute="height" secondItem="M1E-hq-tGJ" secondAttribute="height" id="gGV-lI-7qX"/>
+                                            <constraint firstItem="M1E-hq-tGJ" firstAttribute="leading" secondItem="YTI-aI-H2r" secondAttribute="leading" constant="40" id="j9B-qV-dv3"/>
+                                            <constraint firstAttribute="trailing" secondItem="M1E-hq-tGJ" secondAttribute="trailing" constant="56" id="k5f-oZ-vfD"/>
+                                            <constraint firstItem="dI6-np-zwk" firstAttribute="centerX" secondItem="YTI-aI-H2r" secondAttribute="centerX" id="k66-3y-r3A"/>
+                                            <constraint firstItem="mL3-cU-2ky" firstAttribute="centerX" secondItem="YTI-aI-H2r" secondAttribute="centerX" id="kzG-G1-ebv"/>
+                                            <constraint firstItem="dI6-np-zwk" firstAttribute="centerY" secondItem="YTI-aI-H2r" secondAttribute="centerY" id="lHU-ma-mXp"/>
+                                            <constraint firstItem="mL3-cU-2ky" firstAttribute="leading" secondItem="YTI-aI-H2r" secondAttribute="leading" constant="28" id="nWX-MH-9VD"/>
+                                            <constraint firstAttribute="width" constant="260" id="q25-OV-9jf"/>
+                                            <constraint firstItem="jpS-G0-AXw" firstAttribute="leading" secondItem="M1E-hq-tGJ" secondAttribute="leading" constant="14" id="z98-TK-NgY"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hT-rD-8Kd">
+                                        <rect key="frame" x="233" y="67" width="240" height="240"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="largeHex" translatesAutoresizingMaskIntoConstraints="NO" id="Fac-WC-iPK">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNP-xk-7lt">
+                                                <rect key="frame" x="109.5" y="30" width="21.5" height="42"/>
+                                                <fontDescription key="fontDescription" name="Meckablecka" family="Meckablecka" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="1" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="BAC-DH-2cB">
+                                                <rect key="frame" x="32" y="142.5" width="158" height="23"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="fL9-FJ-XRt">
+                                                        <rect key="frame" x="0.0" y="0.0" width="21.5" height="23"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="sMB-GV-t2c">
+                                                        <rect key="frame" x="27.5" y="0.0" width="21" height="23"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="2SY-20-39J">
+                                                        <rect key="frame" x="54.5" y="0.0" width="21.5" height="23"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="W4O-V8-NdT">
+                                                        <rect key="frame" x="82" y="0.0" width="21.5" height="23"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="qkk-4T-XLO">
+                                                        <rect key="frame" x="109.5" y="0.0" width="21" height="23"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="fde-Gq-2ft">
+                                                        <rect key="frame" x="136.5" y="0.0" width="21.5" height="23"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="23" id="lhB-eT-fZ9"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="1" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="jt6-aO-coE">
+                                                <rect key="frame" x="46" y="165.5" width="158" height="23"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="2rn-PV-hMM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="21.5" height="23"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="UYD-Yp-NZd">
+                                                        <rect key="frame" x="27.5" y="0.0" width="21" height="23"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="2Zp-pA-srX">
+                                                        <rect key="frame" x="54.5" y="0.0" width="21.5" height="23"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="Z9i-wE-YUs">
+                                                        <rect key="frame" x="82" y="0.0" width="21.5" height="23"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="hHm-d4-IDs">
+                                                        <rect key="frame" x="109.5" y="0.0" width="21" height="23"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="k7Y-pt-N60">
+                                                        <rect key="frame" x="136.5" y="0.0" width="21.5" height="23"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="60l-Ow-yUE">
+                                                <rect key="frame" x="28" y="76" width="184" height="58.5"/>
+                                                <fontDescription key="fontDescription" name="Meckablecka" family="Meckablecka" pointSize="56"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="60l-Ow-yUE" firstAttribute="top" secondItem="bNP-xk-7lt" secondAttribute="bottom" constant="4" id="3Za-Cn-8Ns"/>
+                                            <constraint firstItem="BAC-DH-2cB" firstAttribute="leading" secondItem="6hT-rD-8Kd" secondAttribute="leading" constant="32" id="40l-ff-TuV"/>
+                                            <constraint firstItem="Fac-WC-iPK" firstAttribute="height" secondItem="6hT-rD-8Kd" secondAttribute="height" id="5NU-t5-YWI"/>
+                                            <constraint firstItem="bNP-xk-7lt" firstAttribute="centerX" secondItem="6hT-rD-8Kd" secondAttribute="centerX" id="6R4-wj-TRm"/>
+                                            <constraint firstItem="bNP-xk-7lt" firstAttribute="top" secondItem="6hT-rD-8Kd" secondAttribute="top" constant="30" id="8NA-SZ-CR4"/>
+                                            <constraint firstAttribute="width" constant="240" id="92l-Oh-ERL"/>
+                                            <constraint firstItem="jt6-aO-coE" firstAttribute="top" secondItem="BAC-DH-2cB" secondAttribute="bottom" id="Ba6-HT-iQt"/>
+                                            <constraint firstItem="jt6-aO-coE" firstAttribute="width" secondItem="BAC-DH-2cB" secondAttribute="width" id="EyH-XJ-KlR"/>
+                                            <constraint firstItem="60l-Ow-yUE" firstAttribute="centerX" secondItem="6hT-rD-8Kd" secondAttribute="centerX" id="PuR-TB-ack"/>
+                                            <constraint firstAttribute="width" secondItem="6hT-rD-8Kd" secondAttribute="height" multiplier="1:1" id="URL-Lb-UaZ"/>
+                                            <constraint firstItem="Fac-WC-iPK" firstAttribute="centerY" secondItem="6hT-rD-8Kd" secondAttribute="centerY" id="XFX-EX-dsI"/>
+                                            <constraint firstItem="Fac-WC-iPK" firstAttribute="centerX" secondItem="6hT-rD-8Kd" secondAttribute="centerX" id="cWs-Dm-tiU"/>
+                                            <constraint firstItem="Fac-WC-iPK" firstAttribute="width" secondItem="6hT-rD-8Kd" secondAttribute="width" id="gbA-IW-4Wq"/>
+                                            <constraint firstItem="jt6-aO-coE" firstAttribute="leading" secondItem="BAC-DH-2cB" secondAttribute="leading" constant="14" id="ke5-Yi-jnS"/>
+                                            <constraint firstItem="jt6-aO-coE" firstAttribute="height" secondItem="BAC-DH-2cB" secondAttribute="height" id="ltU-3T-PqD"/>
+                                            <constraint firstItem="BAC-DH-2cB" firstAttribute="top" secondItem="60l-Ow-yUE" secondAttribute="bottom" constant="8" id="miU-Ga-1pH"/>
+                                            <constraint firstAttribute="trailing" secondItem="BAC-DH-2cB" secondAttribute="trailing" constant="50" id="rJr-ar-6RK"/>
+                                            <constraint firstItem="60l-Ow-yUE" firstAttribute="leading" secondItem="6hT-rD-8Kd" secondAttribute="leading" constant="28" id="uNq-cf-OqO"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sqe-TQ-usE">
+                                        <rect key="frame" x="893" y="67" width="240" height="240"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="largeHex" translatesAutoresizingMaskIntoConstraints="NO" id="KJ6-C3-v3F">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2f-pE-ZGd">
+                                                <rect key="frame" x="110" y="30" width="20" height="42"/>
+                                                <fontDescription key="fontDescription" name="Meckablecka" family="Meckablecka" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="1" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="JaO-XI-AXq">
+                                                <rect key="frame" x="32" y="142.5" width="158" height="23"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="83J-bA-crD">
+                                                        <rect key="frame" x="0.0" y="0.0" width="21.5" height="23"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="mum-Z6-cLB">
+                                                        <rect key="frame" x="27.5" y="0.0" width="21" height="23"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="YFT-HA-iMa">
+                                                        <rect key="frame" x="54.5" y="0.0" width="21.5" height="23"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="Q0w-d5-Oh6">
+                                                        <rect key="frame" x="82" y="0.0" width="21.5" height="23"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="HMW-E6-Qrf">
+                                                        <rect key="frame" x="109.5" y="0.0" width="21" height="23"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="i2O-MD-KZQ">
+                                                        <rect key="frame" x="136.5" y="0.0" width="21.5" height="23"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="23" id="F50-c1-0qc"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="1" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="4qe-jL-jsj">
+                                                <rect key="frame" x="46" y="165.5" width="158" height="23"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="Wqz-rv-Aap">
+                                                        <rect key="frame" x="0.0" y="0.0" width="21.5" height="23"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="N7p-ZY-pmu">
+                                                        <rect key="frame" x="27.5" y="0.0" width="21" height="23"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="oAv-Xh-V8D">
+                                                        <rect key="frame" x="54.5" y="0.0" width="21.5" height="23"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="Cp0-3Y-TdE">
+                                                        <rect key="frame" x="82" y="0.0" width="21.5" height="23"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="ZT8-qd-aoJ">
+                                                        <rect key="frame" x="109.5" y="0.0" width="21" height="23"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="S6B-Lz-ccR">
+                                                        <rect key="frame" x="136.5" y="0.0" width="21.5" height="23"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jDB-T6-rHu">
+                                                <rect key="frame" x="28" y="76" width="184" height="58.5"/>
+                                                <fontDescription key="fontDescription" name="Meckablecka" family="Meckablecka" pointSize="56"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="jDB-T6-rHu" firstAttribute="top" secondItem="G2f-pE-ZGd" secondAttribute="bottom" constant="4" id="4jx-E1-mjF"/>
+                                            <constraint firstItem="jDB-T6-rHu" firstAttribute="centerX" secondItem="Sqe-TQ-usE" secondAttribute="centerX" id="7gp-3J-yF5"/>
+                                            <constraint firstItem="KJ6-C3-v3F" firstAttribute="centerY" secondItem="Sqe-TQ-usE" secondAttribute="centerY" id="8kH-Hl-XTI"/>
+                                            <constraint firstAttribute="trailing" secondItem="JaO-XI-AXq" secondAttribute="trailing" constant="50" id="Hv1-dQ-Bdc"/>
+                                            <constraint firstItem="JaO-XI-AXq" firstAttribute="leading" secondItem="Sqe-TQ-usE" secondAttribute="leading" constant="32" id="MFG-oB-Cdn"/>
+                                            <constraint firstItem="4qe-jL-jsj" firstAttribute="top" secondItem="JaO-XI-AXq" secondAttribute="bottom" id="Opi-hj-R2r"/>
+                                            <constraint firstItem="jDB-T6-rHu" firstAttribute="leading" secondItem="Sqe-TQ-usE" secondAttribute="leading" constant="28" id="OzR-xg-ckf"/>
+                                            <constraint firstItem="4qe-jL-jsj" firstAttribute="width" secondItem="JaO-XI-AXq" secondAttribute="width" id="UMh-pi-jxk"/>
+                                            <constraint firstItem="KJ6-C3-v3F" firstAttribute="width" secondItem="Sqe-TQ-usE" secondAttribute="width" id="UbR-OA-ZrB"/>
+                                            <constraint firstItem="4qe-jL-jsj" firstAttribute="height" secondItem="JaO-XI-AXq" secondAttribute="height" id="Y7c-We-wtZ"/>
+                                            <constraint firstItem="G2f-pE-ZGd" firstAttribute="centerX" secondItem="Sqe-TQ-usE" secondAttribute="centerX" id="acJ-0r-t32"/>
+                                            <constraint firstItem="G2f-pE-ZGd" firstAttribute="top" secondItem="Sqe-TQ-usE" secondAttribute="top" constant="30" id="eqT-4d-GhI"/>
+                                            <constraint firstAttribute="width" constant="240" id="f1N-oF-gNA"/>
+                                            <constraint firstItem="KJ6-C3-v3F" firstAttribute="height" secondItem="Sqe-TQ-usE" secondAttribute="height" id="iEb-U3-eRZ"/>
+                                            <constraint firstItem="JaO-XI-AXq" firstAttribute="top" secondItem="jDB-T6-rHu" secondAttribute="bottom" constant="8" id="jJ8-sg-7Ky"/>
+                                            <constraint firstItem="4qe-jL-jsj" firstAttribute="leading" secondItem="JaO-XI-AXq" secondAttribute="leading" constant="14" id="mhi-2B-RrT"/>
+                                            <constraint firstAttribute="width" secondItem="Sqe-TQ-usE" secondAttribute="height" multiplier="1:1" id="p95-jp-6QR"/>
+                                            <constraint firstItem="KJ6-C3-v3F" firstAttribute="centerX" secondItem="Sqe-TQ-usE" secondAttribute="centerX" id="qZv-gx-hGi"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="YTI-aI-H2r" firstAttribute="centerX" secondItem="Wd2-cq-T2U" secondAttribute="centerX" id="64M-MP-6ed"/>
+                                    <constraint firstItem="Sqe-TQ-usE" firstAttribute="leading" secondItem="dI6-np-zwk" secondAttribute="trailing" constant="80" id="Cpw-gb-YzZ"/>
+                                    <constraint firstItem="dI6-np-zwk" firstAttribute="leading" secondItem="6hT-rD-8Kd" secondAttribute="trailing" constant="80" id="f0D-qE-ds7"/>
+                                    <constraint firstItem="YTI-aI-H2r" firstAttribute="top" secondItem="Wd2-cq-T2U" secondAttribute="top" constant="88" id="i7n-vC-9pm"/>
+                                    <constraint firstItem="Sqe-TQ-usE" firstAttribute="top" secondItem="Wd2-cq-T2U" secondAttribute="top" constant="67" id="itH-21-cac"/>
+                                    <constraint firstItem="6hT-rD-8Kd" firstAttribute="top" secondItem="Wd2-cq-T2U" secondAttribute="top" constant="67" id="lRo-Wf-1z1"/>
+                                </constraints>
+                            </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ofo-UV-CKN">
                                 <rect key="frame" x="40" y="424" width="1286" height="560"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -439,30 +436,30 @@
                         <constraints>
                             <constraint firstItem="760-nR-fP3" firstAttribute="trailing" secondItem="Ofo-UV-CKN" secondAttribute="trailing" constant="40" id="1pP-FZ-MKt"/>
                             <constraint firstItem="760-nR-fP3" firstAttribute="bottom" secondItem="Ofo-UV-CKN" secondAttribute="bottom" constant="20" id="4N8-Ab-Qdr"/>
-                            <constraint firstItem="ojG-kU-oCh" firstAttribute="height" secondItem="a0b-cy-cCD" secondAttribute="height" id="9fM-3j-hzc"/>
+                            <constraint firstItem="Wd2-cq-T2U" firstAttribute="width" secondItem="a0b-cy-cCD" secondAttribute="width" id="Aib-XN-fej"/>
                             <constraint firstItem="Ofo-UV-CKN" firstAttribute="leading" secondItem="760-nR-fP3" secondAttribute="leading" constant="40" id="H9f-Ba-0IE"/>
-                            <constraint firstItem="ojG-kU-oCh" firstAttribute="centerX" secondItem="760-nR-fP3" secondAttribute="centerX" id="Hu0-xr-1EH"/>
                             <constraint firstItem="Ofo-UV-CKN" firstAttribute="top" secondItem="760-nR-fP3" secondAttribute="top" constant="400" id="M4a-FJ-hkM"/>
                             <constraint firstItem="760-nR-fP3" firstAttribute="trailing" secondItem="KaD-Fv-YIG" secondAttribute="trailing" id="NgT-uu-lJs"/>
-                            <constraint firstItem="760-nR-fP3" firstAttribute="top" secondItem="KaD-Fv-YIG" secondAttribute="top" constant="24" id="O2O-oq-bam"/>
+                            <constraint firstItem="760-nR-fP3" firstAttribute="top" secondItem="KaD-Fv-YIG" secondAttribute="top" constant="100" id="O2O-oq-bam"/>
+                            <constraint firstItem="Wd2-cq-T2U" firstAttribute="centerY" secondItem="760-nR-fP3" secondAttribute="centerY" id="h2w-Bs-Q86"/>
                             <constraint firstItem="KaD-Fv-YIG" firstAttribute="leading" secondItem="760-nR-fP3" secondAttribute="leading" id="jWI-VS-wlM"/>
-                            <constraint firstItem="KaD-Fv-YIG" firstAttribute="bottom" secondItem="760-nR-fP3" secondAttribute="bottom" constant="20" id="mT4-cl-L3i"/>
-                            <constraint firstItem="ojG-kU-oCh" firstAttribute="centerY" secondItem="760-nR-fP3" secondAttribute="centerY" id="q1D-6g-3mE"/>
-                            <constraint firstItem="ojG-kU-oCh" firstAttribute="width" secondItem="a0b-cy-cCD" secondAttribute="width" id="wcE-IA-DMB"/>
+                            <constraint firstItem="KaD-Fv-YIG" firstAttribute="bottom" secondItem="760-nR-fP3" secondAttribute="bottom" constant="100" id="mT4-cl-L3i"/>
+                            <constraint firstItem="Wd2-cq-T2U" firstAttribute="height" secondItem="a0b-cy-cCD" secondAttribute="height" id="mj5-AI-iuv"/>
+                            <constraint firstItem="Wd2-cq-T2U" firstAttribute="centerX" secondItem="760-nR-fP3" secondAttribute="centerX" id="u44-8w-aJA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="760-nR-fP3"/>
                     </view>
                     <connections>
-                        <outlet property="firstPlaceBottomStackView" destination="Nzb-b1-kQh" id="koe-Fg-GNq"/>
-                        <outlet property="firstPlaceTopStackView" destination="5rg-cS-hZ0" id="kKA-QB-25Y"/>
-                        <outlet property="firstPlaceUsername" destination="w3n-px-Pr4" id="Czv-zM-AZX"/>
+                        <outlet property="firstPlaceBottomStackView" destination="jpS-G0-AXw" id="mf9-mE-1BP"/>
+                        <outlet property="firstPlaceTopStackView" destination="M1E-hq-tGJ" id="jRz-6D-4iz"/>
+                        <outlet property="firstPlaceUsername" destination="mL3-cU-2ky" id="bwS-8c-iDX"/>
                         <outlet property="leaderboardCollectionView" destination="Ofo-UV-CKN" id="cGu-z0-3ml"/>
-                        <outlet property="secondPlaceBottomStackView" destination="RRI-Ju-Kdq" id="q2V-dr-iEc"/>
-                        <outlet property="secondPlaceTopStackView" destination="fDC-Lh-fbZ" id="Jwr-GJ-Rip"/>
-                        <outlet property="secondPlaceUsername" destination="dpa-Ap-iew" id="A0x-3E-9SY"/>
-                        <outlet property="thirdPlaceBottomStackView" destination="8Xh-UK-cpB" id="HzB-FK-eoX"/>
-                        <outlet property="thirdPlaceTopStackView" destination="j2F-m1-E9U" id="LiP-nT-Ni1"/>
-                        <outlet property="thirdPlaceUsername" destination="8ak-Xz-BDj" id="DcJ-Am-hsI"/>
+                        <outlet property="secondPlaceBottomStackView" destination="jt6-aO-coE" id="goO-CI-HEy"/>
+                        <outlet property="secondPlaceTopStackView" destination="BAC-DH-2cB" id="Tcg-vR-WiU"/>
+                        <outlet property="secondPlaceUsername" destination="60l-Ow-yUE" id="oa6-Dt-gHl"/>
+                        <outlet property="thirdPlaceBottomStackView" destination="4qe-jL-jsj" id="1yM-1a-TPU"/>
+                        <outlet property="thirdPlaceTopStackView" destination="JaO-XI-AXq" id="ZEZ-Vf-Mm0"/>
+                        <outlet property="thirdPlaceUsername" destination="jDB-T6-rHu" id="Hnr-Kb-W3u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GPm-eT-B0l" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -472,7 +469,7 @@
     </scenes>
     <resources>
         <image name="blueprint" width="709" height="473"/>
-        <image name="hex" width="837" height="565"/>
+        <image name="hex" width="1112" height="666"/>
         <image name="largeHex" width="348" height="392"/>
         <image name="largeHexOutline" width="234" height="262"/>
         <image name="outlineHexagonDark" width="40" height="42"/>

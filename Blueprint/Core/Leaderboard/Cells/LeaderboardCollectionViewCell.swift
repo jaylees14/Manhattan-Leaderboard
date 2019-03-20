@@ -49,5 +49,4 @@ class LeaderboardCollectionViewCell: UICollectionViewCell {
         
         self.layoutIfNeeded()
     }
-
 }
