@@ -40,4 +40,47 @@ public class BlueprintAPI {
             }
         }
     }
+    
+    public class func leaderboard(callback: @escaping (Result<Leaderboard, String>) -> Void) {
+        let headers: HTTPHeaders = ["Authorization": "Bearer \(KeychainManager.accessToken ?? "")"]
+        Alamofire.request("\(progressURL)/progress/leaderboard", method: HTTPMethod.get, parameters: nil, encoding: JSONEncoding.default, headers: headers).responseSwiftyJSON { response in
+            switch response.result {
+            case .success(_):
+                guard let data = response.data else {
+                    callback(.failure("Could not decode response"))
+                    return
+                }
+                parseJSON(to: Leaderboard.self, from: data, then: callback)
+                
+            case .failure(let error):
+                callback(.failure(error.localizedDescription))
+            }
+        }
+    }
+    
+    public class func itemSchema(callback: @escaping (Result<ItemSchema, String>) -> Void) {
+        let headers: HTTPHeaders = ["Authorization": "Bearer \(KeychainManager.accessToken ?? "")"]
+        
+        Alamofire.request("\(progressURL)/item-schema", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: headers).responseData(completionHandler: { (response) in
+            switch response.result {
+            case .success(_):
+                guard let data = response.data else {
+                    callback(.failure("Could not decode response"))
+                    return
+                }
+                parseJSON(to: ItemSchema.self, from: data, then: callback)
+            case .failure(let error):
+                callback(.failure(error.localizedDescription))
+            }
+        })
+    }
+    
+    private class func parseJSON<T: Decodable>(to: T.Type, from data: Data, then callback: @escaping (_ result: Result<T, String>) -> Void){
+        do {
+            let json = try JSONDecoder().decode(T.self, from: data)
+            callback(.success(json))
+        } catch let error {
+            callback(.failure(error.localizedDescription))
+        }
+    }
 }
