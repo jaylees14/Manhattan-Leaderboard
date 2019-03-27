@@ -45,8 +45,8 @@ class LeaderboardViewController: UIViewController {
             set(stackView: firstPlaceBottomStackView, to: progressBottom(first.completed))
         } else {
             firstPlaceUsername.text = ""
-            set(stackView: firstPlaceTopStackView, to: 0)
-            set(stackView: firstPlaceBottomStackView, to: 0)
+            set(stackView: firstPlaceTopStackView, to: 0, hide: true)
+            set(stackView: firstPlaceBottomStackView, to: 0, hide: true)
         }
         
         if let second = progress.dropFirst().first {
@@ -55,8 +55,8 @@ class LeaderboardViewController: UIViewController {
             set(stackView: secondPlaceBottomStackView, to: progressBottom(second.completed))
         } else {
             secondPlaceUsername.text = ""
-            set(stackView: secondPlaceTopStackView, to: 0)
-            set(stackView: secondPlaceBottomStackView, to: 0)
+            set(stackView: secondPlaceTopStackView, to: 0, hide: true)
+            set(stackView: secondPlaceBottomStackView, to: 0, hide: true)
         }
         
         if let third = progress.dropFirst(2).first {
@@ -65,13 +65,13 @@ class LeaderboardViewController: UIViewController {
             set(stackView: thirdPlaceBottomStackView, to: progressBottom(third.completed))
         } else {
             thirdPlaceUsername.text = ""
-            set(stackView: thirdPlaceTopStackView, to: 0)
-            set(stackView: thirdPlaceBottomStackView, to: 0)
+            set(stackView: thirdPlaceTopStackView, to: 0, hide: true)
+            set(stackView: thirdPlaceBottomStackView, to: 0, hide: true)
         }
     }
     
-    private func set(stackView: UIStackView, to progress: Int) {
-        stackView.isHidden = progress == 0
+    private func set(stackView: UIStackView, to progress: Int, hide: Bool = false) {
+        stackView.isHidden = hide
         let imageViews = stackView.subviews.filter { $0 is UIImageView } as! [UIImageView]
         imageViews.forEach { $0.image = outlineImage }
         imageViews.prefix(upTo: progress).forEach { $0.image = filledImage }
