@@ -21,7 +21,6 @@ class LeaderboardViewController: UIViewController {
     @IBOutlet weak var thirdPlaceTopStackView: UIStackView!
     @IBOutlet weak var thirdPlaceBottomStackView: UIStackView!
     
-   
     private var dataManager: LeaderboardDataManager!
     private var progress = [LeaderboardDataManager.Progress]()
     private let outlineImage = UIImage(named: "outlineHexagonDark")
@@ -106,9 +105,17 @@ extension LeaderboardViewController: UICollectionViewDelegate, UICollectionViewD
 
 extension LeaderboardViewController: LeaderboardDelegate {
     func didUpdateProgress(_ progress: [String : Int]) {
-        self.progress = progress.sorted(by: { (pairA, pairB) -> Bool in
-            pairA.value > pairB.value
-        }).map { $0 }
+        self.progress = []
+        for i in (0...12).reversed() {
+            // Get all users with that index
+            let sortedAtIndex: [LeaderboardDataManager.Progress] = progress
+                .filter { $0.value == i }
+                .sorted(by: { (pairA, pairB) -> Bool in
+                    pairA.key.uppercased() < pairB.key.uppercased()
+                })
+                .map{ $0 }
+            self.progress.append(contentsOf: sortedAtIndex)
+        }
         
         leaderboardCollectionView.reloadData()
         reloadTopThree()
