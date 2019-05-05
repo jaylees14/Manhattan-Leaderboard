@@ -25,6 +25,7 @@ class LeaderboardViewController: UIViewController {
     private var progress = [LeaderboardDataManager.Progress]()
     private let outlineImage = UIImage(named: "outlineHexagonDark")
     private let filledImage = UIImage(named: "fillHexagonDark")
+    private var currentLocation = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +36,17 @@ class LeaderboardViewController: UIViewController {
         self.leaderboardCollectionView.delegate = self
         self.leaderboardCollectionView.dataSource = self
         self.leaderboardCollectionView.register(UINib(nibName: "LeaderboardCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { _ in
+            // Ensure we have enough to scroll
+            guard self.progress.count > 12 else { return }
+            
+            self.currentLocation = (self.currentLocation + 3) % (self.progress.count - 9)
+            self.leaderboardCollectionView.scrollToItem(at: IndexPath(row: self.currentLocation, section: 0), at: .left, animated: true)
+            
+        }
     }
     
     private func reloadTopThree() {
@@ -92,13 +104,13 @@ extension LeaderboardViewController: UICollectionViewDelegate, UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! LeaderboardCollectionViewCell
-        // +4 since we store stop 3 separately, and row is 0 indexed
+        // +4 since we store top 3 separately, and row is 0 indexed
         cell.configure(position: indexPath.row + 4, progress: progress[indexPath.row + 3])
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width / 3 - 30, height: 150)
+        return CGSize(width: collectionView.frame.width / 3 - 30, height: collectionView.frame.height / 3 - 30)
     }
 }
 
