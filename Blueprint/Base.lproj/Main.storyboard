@@ -145,19 +145,19 @@
                                 <rect key="frame" x="0.0" y="10" width="1112" height="834"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YTI-aI-H2r">
-                                        <rect key="frame" x="456" y="40" width="200" height="16"/>
+                                        <rect key="frame" x="456" y="40" width="200" height="262"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="largeHexOutline" translatesAutoresizingMaskIntoConstraints="NO" id="dI6-np-zwk">
-                                                <rect key="frame" x="0.0" y="0.0" width="200" height="16"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="262"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6t-gg-nBB">
-                                                <rect key="frame" x="89" y="35" width="22.5" height="47"/>
+                                                <rect key="frame" x="94" y="35" width="12" height="42"/>
                                                 <fontDescription key="fontDescription" name="GlueGun" family="Glue Gun" pointSize="40"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="1" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="M1E-hq-tGJ">
-                                                <rect key="frame" x="27" y="159.5" width="133" height="20"/>
+                                                <rect key="frame" x="27" y="147.5" width="133" height="20"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="MIo-um-nYO">
                                                         <rect key="frame" x="0.0" y="0.0" width="17" height="20"/>
@@ -183,7 +183,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="1" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="jpS-G0-AXw">
-                                                <rect key="frame" x="41" y="179.5" width="133" height="20"/>
+                                                <rect key="frame" x="41" y="167.5" width="133" height="20"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="LuC-YQ-2RT">
                                                         <rect key="frame" x="0.0" y="0.0" width="17" height="20"/>
@@ -205,8 +205,8 @@
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mL3-cU-2ky">
-                                                <rect key="frame" x="28" y="86" width="144" height="65.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BlueprintLover69" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.20000000000000001" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mL3-cU-2ky">
+                                                <rect key="frame" x="28" y="81" width="144" height="58.5"/>
                                                 <fontDescription key="fontDescription" name="Meckablecka" family="Meckablecka" pointSize="56"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -237,16 +237,16 @@
                                         <rect key="frame" x="176" y="30" width="200" height="200"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="largeHex" translatesAutoresizingMaskIntoConstraints="NO" id="Fac-WC-iPK">
-                                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="200.00000000000011"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNP-xk-7lt">
-                                                <rect key="frame" x="89" y="8" width="22.5" height="47"/>
+                                                <rect key="frame" x="91.5" y="8" width="17.5" height="42"/>
                                                 <fontDescription key="fontDescription" name="GlueGun" family="Glue Gun" pointSize="40"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="1" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="BAC-DH-2cB">
-                                                <rect key="frame" x="28" y="132.5" width="132" height="20"/>
+                                                <rect key="frame" x="28" y="120.5" width="132" height="20"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="fL9-FJ-XRt">
                                                         <rect key="frame" x="0.0" y="0.0" width="17" height="20"/>
@@ -272,7 +272,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="1" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="jt6-aO-coE">
-                                                <rect key="frame" x="42" y="152.5" width="132" height="20"/>
+                                                <rect key="frame" x="42" y="140.5" width="132" height="20"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="2rn-PV-hMM">
                                                         <rect key="frame" x="0.0" y="0.0" width="17" height="20"/>
@@ -294,8 +294,8 @@
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="60l-Ow-yUE">
-                                                <rect key="frame" x="28" y="59" width="144" height="65.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jay" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.20000000000000001" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="60l-Ow-yUE">
+                                                <rect key="frame" x="28" y="54" width="144" height="58.5"/>
                                                 <fontDescription key="fontDescription" name="Meckablecka" family="Meckablecka" pointSize="56"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -327,16 +327,16 @@
                                         <rect key="frame" x="736" y="30" width="200" height="200"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="largeHex" translatesAutoresizingMaskIntoConstraints="NO" id="KJ6-C3-v3F">
-                                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="200.00000000000011"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2f-pE-ZGd">
-                                                <rect key="frame" x="89" y="8" width="22.5" height="47"/>
+                                                <rect key="frame" x="91.5" y="8" width="17.5" height="42"/>
                                                 <fontDescription key="fontDescription" name="GlueGun" family="Glue Gun" pointSize="40"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="1" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="JaO-XI-AXq">
-                                                <rect key="frame" x="28" y="132.5" width="132" height="20"/>
+                                                <rect key="frame" x="28" y="120.5" width="132" height="20"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="83J-bA-crD">
                                                         <rect key="frame" x="0.0" y="0.0" width="17" height="20"/>
@@ -362,7 +362,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="1" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="4qe-jL-jsj">
-                                                <rect key="frame" x="42" y="152.5" width="132" height="20"/>
+                                                <rect key="frame" x="42" y="140.5" width="132" height="20"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" image="outlineHexagonDark" translatesAutoresizingMaskIntoConstraints="NO" id="Wqz-rv-Aap">
                                                         <rect key="frame" x="0.0" y="0.0" width="17" height="20"/>
@@ -384,8 +384,8 @@
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jDB-T6-rHu">
-                                                <rect key="frame" x="28" y="59" width="144" height="65.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jay" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.20000000000000001" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jDB-T6-rHu">
+                                                <rect key="frame" x="28" y="54" width="144" height="58.5"/>
                                                 <fontDescription key="fontDescription" name="Meckablecka" family="Meckablecka" pointSize="56"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
